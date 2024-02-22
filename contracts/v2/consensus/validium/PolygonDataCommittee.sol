@@ -22,7 +22,7 @@ contract PolygonDataCommittee is
     }
 
     // Name of the data availability protocol
-    string internal constant _PROTOCOL_NAME = "DataAvailabilityCommittee";
+    string internal constant _PROTOCOL_NAME = "DataAvailabilityZg";
 
     // Size of a signature in bytes
     uint256 internal constant _SIGNATURE_SIZE = 65;

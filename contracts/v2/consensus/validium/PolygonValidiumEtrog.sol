@@ -214,10 +214,11 @@ contract PolygonValidiumEtrog is PolygonRollupBaseEtrog, IPolygonValidium {
 
             // Validate that the data availability protocol accepts the dataAvailabilityMessage
             // note This is a view function, so there's not much risk even if this contract was vulnerable to reentrant attacks
-            dataAvailabilityProtocol.verifyMessage(
-                accumulatedNonForcedTransactionsHash,
-                dataAvailabilityMessage
-            );
+            // todo: should verify zgda?
+            // dataAvailabilityProtocol.verifyMessage(
+            //     accumulatedNonForcedTransactionsHash,
+            //     dataAvailabilityMessage
+            // );
         }
 
         uint64 currentBatchSequenced = rollupManager.onSequenceBatches(
